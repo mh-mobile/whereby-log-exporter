@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="jquery.min.js"></script>
+    <style>
+      body {
+        width: 300px;
+      }
+
+      #log {
+        border: 2px dashed #ccc;
+        margin-top: 20px;
+        padding: 5px;
+        width: 100%;
+        height: 500px;
+        box-sizing: border-box;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        overflow: scroll;
+        resize: none;
+        outline: none;
+      }
+
+      #copy {
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="generate">ログを出力する</button>
+    <button id="copy">ログをコピーする</button>
+    <textarea id="log" value="" readonly></textarea>
+    <script src="popup.js"></script>
+  </body>
+</html>

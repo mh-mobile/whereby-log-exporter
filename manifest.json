@@ -1,0 +1,16 @@
+{
+  "name": "Whereby Log Exporter",
+  "manifest_version": 2,
+  "version": "1.0",
+  "browser_action": {
+    "default_title": "Whereby Log Exporter",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "js": ["jquery.min.js", "content_script.js"],
+      "matches": ["https://whereby.com/*"]
+    }
+  ]
+}
