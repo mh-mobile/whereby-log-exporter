@@ -43,3 +43,11 @@ $ git clone git@github.com:mh-mobile/whereby-log-exporter.git
 
 <img src="./images/log_copy.png" width=40%>
 
+
+
+## その他
+
+Chrome DevToolsのコンソールログにチャットログを出力したい場合は、以下のGistを参照してください。
+
+[https://gist.github.com/mh-mobile/721b33501b5cc84708095025c6dd5097](https://gist.github.com/mh-mobile/721b33501b5cc84708095025c6dd5097)
+
