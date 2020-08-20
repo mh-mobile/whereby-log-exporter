@@ -23,12 +23,23 @@ $ git clone git@github.com:mh-mobile/whereby-log-exporter.git
 2. チャット画面を開いた状態で、Whereby Log ExporterのChrome拡張のアイコンを選択します。
 3. Chrome拡張のポップアップ画面が表示されます。
 
+<img src="./images/popup.png" width=40%>
+
+
+
 ### チャットのログの出力
 
 チャットのログが書き込まれた状態で、ログを出力するボタンを選択します。
 選択後、ポップアップ画面の枠線内のエリアにチャットのログを出力します。
 
+<img src="./images/log_export.png" width=40%>
+
 ### チャットのログのコピー
 
 チャットのログがポップアップ画面に出力された状態で、ログをコピーするボタンを選択します。
 選択後、クリップボードにログのテキストデータがコピーされます。
+
+※テキストデータが選択状態になりますが、この時点でクリップボードにコピーされています。
+
+<img src="./images/log_copy.png" width=40%>
+
