@@ -14,8 +14,5 @@
       "js": ["jquery.min.js", "content_script.js"],
       "matches": ["https://whereby.com/*"]
     }
-  ],
-  "permissions": [
-    "tabs", "https://whereby.com/*"
   ]
 }
