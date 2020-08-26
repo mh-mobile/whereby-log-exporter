@@ -21,7 +21,7 @@ class ChatMessageGroup {
   
   buildLog() {
     return `
->> ${this.displayName} ${this.timestamp}
+@${this.displayName} ${this.timestamp}
      
 ${this.chatMessages.map((chatMessage) => chatMessage.buildLog()).join("\n\n")} 
     `
