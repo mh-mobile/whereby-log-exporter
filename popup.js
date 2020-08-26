@@ -1,8 +1,22 @@
 $("#generate").on("click", () => {
-  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-    chrome.tabs.sendMessage(tabs[0].id, null, function (response) {
-      $("#log").val(response)
-    })
+  function waitPageLoad(callback) {
+    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+      const currentTab = tabs.shift();
+
+      if (currentTab.status === "complete") {
+        callback(currentTab);
+      } else {
+        setTimeout(() => {
+          waitPageLoad(callback);
+        }, 50);
+      }
+    });
+  }
+
+  waitPageLoad((currentTab) => {
+    chrome.tabs.sendMessage(currentTab.id, null, function (response) {
+      $("#log").val(response);
+    });
   });
 });
 

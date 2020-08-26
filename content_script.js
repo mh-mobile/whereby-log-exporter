@@ -28,10 +28,13 @@ ${this.chatMessages.map((chatMessage) => chatMessage.buildLog()).join("\n\n")}
   }
 }
 
-
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
   let chatMessages = document.querySelector("[class^=ChatMessages]")
-  if (!chatMessages) return 
+  if (!chatMessages) {
+    sendResponse('')
+    return true 
+  }
+
   let messageGroups = Array.from(chatMessages.children).map((group) => new ChatMessageGroup(group))
   let log = messageGroups.map((group) => group.buildLog()).join("\n")
   sendResponse(log)
