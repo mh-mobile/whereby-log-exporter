@@ -1,7 +1,7 @@
 {
   "name": "Whereby Log Exporter",
   "manifest_version": 2,
-  "version": "1.0",
+  "version": "1.1.1",
   "browser_action": {
     "default_title": "Whereby Log Exporter",
     "default_popup": "popup.html"
