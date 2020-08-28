@@ -1,7 +1,7 @@
 {
   "name": "Whereby Log Exporter",
   "manifest_version": 2,
-  "version": "1.1.1",
+  "version": "1.1.2",
   "icons": {
     "64": "icons/export.png"
   },
@@ -12,7 +12,7 @@
   "content_scripts": [
     {
       "js": ["jquery.min.js", "content_script.js"],
-      "matches": ["https://whereby.com/*"]
+      "matches": ["https://*.whereby.com/*"]
     }
   ]
 }
